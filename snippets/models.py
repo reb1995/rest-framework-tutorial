@@ -30,7 +30,6 @@ class Snippet(models.Model):
     class Meta:
         ordering = ('created',)
 
-
     def save(self, *args, **kwargs):
         """
         Use the `pygments` library to create a highlighted HTML
